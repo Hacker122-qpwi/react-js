@@ -59,6 +59,16 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 =>  { Style } use [` <div style={{width: '100%', heihgt: '100%'}}></div> `]
 =>  { Link } use [` import {Link} from 'react-router-dom'; `] and [` <Link to=''></Link> `]
 
+# If want input image in project website first make folder name [` assets `]
+
+# If use BrowserRouter first make file name vercel.json and input this code
+
+{
+    "rewrites": [
+        { "source": "/(.*)", "destination": "/" }
+    ]
+}
+
 # Make file .gitignore
 
 # Write this code in file .gitignore
@@ -92,3 +102,4 @@ dist-ssr
 =>  { Name } use [` className `]
 
 =>  { Button } use [` <button onClick={() => window.open = 'https://www.youtube.com'}>Go to youtube</button> `]
+
