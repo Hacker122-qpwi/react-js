@@ -56,8 +56,39 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 ---------------------------------------------------------------------------------------------
 
 --> [` Style Link Name and Button `]
-
 =>  { Style } use [` <div style={{width: '100%', heihgt: '100%'}}></div> `]
 =>  { Link } use [` import {Link} from 'react-router-dom'; `] and [` <Link to=''></Link> `]
+
+# Make file .gitignore
+
+# Write this code in file .gitignore
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
 =>  { Name } use [` className `]
+
 =>  { Button } use [` <button onClick={() => window.open = 'https://www.youtube.com'}>Go to youtube</button> `]
