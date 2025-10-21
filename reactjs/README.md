@@ -58,6 +58,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 --> [` Style Link Name and Button `]
 =>  { Style } use [` <div style={{width: '100%', heihgt: '100%'}}></div> `]
 =>  { Link } use [` import {Link} from 'react-router-dom'; `] and [` <Link to=''></Link> `]
+=>  { Name } use [` className `]
+=>  { Button } use [` <button onClick={() => window.open = 'https://www.youtube.com'}>Go to youtube</button> `]
 
 # If want input image in project website first make folder name [` assets `]
 
@@ -98,8 +100,32 @@ dist-ssr
 *.sln
 *.sw?
 
+# For push github
 
-=>  { Name } use [` className `]
+# If make new website project in github
 
-=>  { Button } use [` <button onClick={() => window.open = 'https://www.youtube.com'}>Go to youtube</button> `]
+git init
+git add README.md    # If use for framwork
+git commit -m "first commit"
+git branch -M main
+git remote add origin ( link github )
+git push -u origin main
+
+# If push old project 
+
+git remote add origin ( https:// .... )
+git branch -M main
+git push -u origin main
+
+# If want chang remote 
+
+git remote remove origin
+git remote add origin https://github.com/username/repo.git
+git push -u origin main
+
+# If want see your remote
+
+git remote -v
+
+
 
